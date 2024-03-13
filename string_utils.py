@@ -46,12 +46,4 @@ def opposite_case(str_in: str) -> str:
     Example: 
     When input = "Python" the function returns "pYTHON"
     """
-    new_str = ""
-    for i in range(len(str_in)):
-        if str_in[i].islower():
-            new_str += str_in[i].upper()
-        else:
-            new_str += str_in[i].lower()
-    return new_str
-
-# remove pass statement and implement me
+    return str_in.swapcase()

@@ -20,7 +20,9 @@ def print_list_items(list_in: List) -> None:
     :param list_in: Input list
     :return: None
     """
-    return list_in[0:]  # remove pass statement and implement me
+    for i in list_in:
+        print(i)
+    # remove pass statement and implement me
 
 
 def sort_by_commit_count(list_in: List) -> List:
@@ -54,8 +56,19 @@ def half_list(list_in: List, half: int) -> List:
     :return: A list.
     """
 
-    return #list_in[mid:0]  # remove pass statement and implement me
+    mid = ceil(len(list_in)/2)
 
+    a = list_in[:mid]
+    if len(list_in) % 2 != 0:
+        b = list_in[mid-1:]
+    else:
+        b = list_in[mid:]
+
+
+    if half == 1:
+        return a
+    elif half == 2:
+        return b
 
 def remove_odds(list_in: List[int]) -> None:
     """
@@ -64,7 +77,7 @@ def remove_odds(list_in: List[int]) -> None:
     :return: None
     """
     for item in list_in:
-        if not item%2==0:
+        if not item % 2 == 0:
             list_in.remove(item)# remove pass statement and implement me
 
 
