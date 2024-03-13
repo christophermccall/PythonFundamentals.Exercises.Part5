@@ -1,5 +1,5 @@
 
-def str_len(str_in: str) -> int:
+def str_len(str_in: str) -> str:
     # function changed from -> str to -> int to return the right type specified by the test. -Chris M
     """
     Given a string parameter, this function should return the length of the parameter.
